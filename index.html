@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
         <title>lab9</title>
-        
+
 		<!--put your external stylesheet links here-->
 		<link rel="stylesheet" href="css/styles.css">
 		<!-- link to leaflet styles -->
@@ -18,15 +18,23 @@
     <body>
         <!--put your initial page content here-->
 		<div id="div1">
+      <p> Q2 - The 'styleAll' function defines how the placemarks will look on the map. The 'styles' variable is an object that contains name:key pairs defining the default style elements of the placemarks. The conditional if statement defines the placemark style in the case where the geometry of data being passed to this function is points. The 'styleAll' function returns the 'styles' object.</p>
+      <p> Q4 - 'Feature' is the point data for each train station, while 'layer' is the visual representation of each train statin on the map.</p>
+      <p> Q5 - The fundamental difference is that 'layer.options.fill' returns a Boolean, while 'layer.getLatLng()' returns an Object.</p>
+      <p> Q6 - The placemarks are no longer filled with any colour and their size is now huge. This makes for a weird piece of art, but in no way a functional geovisualization.</p>
 		</div>
 		<div id="mapdiv">
-			
-		</div>
-		
-        <!--you can also use this space for internal scripts; you would place these within <script> tags-->
 
-        
-		
+		</div>
+
+        <!--you can also use this space for internal scripts; you would place these within <script> tags-->
+        <select class="li-nav" name="mapdropdown" id="mapdropdown" onChange="loadMap(this.value);">
+	         <option value="map0" selected="selected" disabled>Load a map</option>
+	         <option value='mapa'>Map A</option>
+	         <option value='mapb'>Map B</option>
+        </select>
+
+
 		<!--put your external script links here-->
         <script type="text/javascript" src="js/main.js"></script>
     </body>
